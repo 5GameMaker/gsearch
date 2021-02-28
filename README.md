@@ -19,3 +19,5 @@ please help with plugins, currently only google search is supported
 1. Add Bing, Yandex and DuckDuckGo search engines
 2. Add support for wikipedia, gist.github.com and stackoverflow
 3. Add dynamic plugins and config
+4. Make actual docs
+5. At least make it functional
