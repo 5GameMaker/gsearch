@@ -3,6 +3,8 @@ import { WebSite } from './website';
 
 import './plugins/gsearch-google-plugin';
 
+export * from './website';
+
 async function main(args : string[]) {
     if (!process.stdout.isTTY) {
         console.log(`This command must run on tty`.red);
@@ -20,4 +22,4 @@ async function main(args : string[]) {
 
     await site.finalize();
 }
-main(process.argv.slice(2));
+if (require.main == module) main(process.argv.slice(2));

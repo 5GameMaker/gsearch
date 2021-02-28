@@ -1,2 +1,5 @@
 node_modules
 latest.html
+*.d.ts.map
+*.d.ts
+*.js.map
