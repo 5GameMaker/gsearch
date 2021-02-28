@@ -1,0 +1,30 @@
+{
+  "name": "gsearch",
+  "version": "1.0.0",
+  "description": "Google Search from command line",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/5GameMaker/gsearch.git"
+  },
+  "author": "buj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/5GameMaker/gsearch/issues"
+  },
+  "homepage": "https://github.com/5GameMaker/gsearch#readme",
+  "dependencies": {
+    "@types/colors": "^1.2.1",
+    "colors": "^1.4.0",
+    "jsdom": "^16.4.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^16.2.6",
+    "@types/node": "^14.14.31",
+    "@types/node-fetch": "^2.5.8"
+  }
+}
