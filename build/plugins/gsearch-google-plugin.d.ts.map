@@ -1,1 +1,0 @@
-{"version":3,"file":"gsearch-google-plugin.d.ts","sourceRoot":"","sources":["../../src/plugins/gsearch-google-plugin.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,aAAa,EAAE,MAAM,YAAY,CAAA;AAEnD,qBAAa,mBAAoB,YAAW,aAAa;IACrD,KAAK,CAAC,IAAI,EAAE,GAAG,GAAG,OAAO;IAInB,MAAM,CAAC,IAAI,EAAE,OAAO,GAAG,OAAO,CAAC,IAAI,CAAC;CA8B7C"}
