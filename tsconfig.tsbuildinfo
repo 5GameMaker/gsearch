@@ -527,13 +527,18 @@
         "affectsGlobalScope": false
       },
       "./src/plugins/gsearch-google-plugin.ts": {
-        "version": "440bda85d17fad2a5f1f435e9427996a5506f4d6ae9c773f1dededcc42aa877c",
+        "version": "61f3abdb53e6fc15517dacab38214ca642f3160dcfefebae2e5b7290095cc4fa",
         "signature": "9dbe70290752cf245b9ab37be831208f31b04acbdccd276c6102d9f0da0b675f",
         "affectsGlobalScope": false
       },
+      "./src/plugins/gsearch-github-gist-plugin.ts": {
+        "version": "fe1520a7916106308205be8da74f31588e4b5e901af1d5dce2935679c00fcc2d",
+        "signature": "026d468b297c7047247cd1fc9d0cdd4a1019f1e4ba881f45e7475ceac52b17b9",
+        "affectsGlobalScope": false
+      },
       "./src/index.ts": {
-        "version": "54875a195a8c0c5f5102407c4a1f96093fade94ba6afa83cdac7d5a88369cce5",
-        "signature": "2fb495b2e2a1fdcae83cc1505aa3346f7411cba4fd732528d42715cc51538d92",
+        "version": "0e117b2e093e88d47d6a262a08ab6a81294918cebbe318b0881faa30ff712cbf",
+        "signature": "7ac0b1457ed0dd50fa28e1aaeeb35513d4a17c1981003dc0b63801831b9beea1",
         "affectsGlobalScope": false
       }
     },
@@ -1001,8 +1006,17 @@
         "./node_modules/@types/jsdom/index.d.ts",
         "./node_modules/@types/jsdom/ts3.4/index.d.ts",
         "./node_modules/@types/jsdom/ts3.5/index.d.ts",
+        "./node_modules/@types/node/readline.d.ts",
         "./node_modules/colors/index.d.ts",
+        "./src/plugins/gsearch-github-gist-plugin.ts",
         "./src/plugins/gsearch-google-plugin.ts",
+        "./src/website.ts"
+      ],
+      "./src/plugins/gsearch-github-gist-plugin.ts": [
+        "./node_modules/@types/jsdom/index.d.ts",
+        "./node_modules/@types/jsdom/ts3.4/index.d.ts",
+        "./node_modules/@types/jsdom/ts3.5/index.d.ts",
+        "./node_modules/@types/node-fetch/index.d.ts",
         "./src/website.ts"
       ],
       "./src/plugins/gsearch-google-plugin.ts": [
@@ -1534,7 +1548,12 @@
       ],
       "./src/index.ts": [
         "./node_modules/colors/index.d.ts",
-        "./src/plugins/gsearch-google-plugin.ts"
+        "./src/plugins/gsearch-github-gist-plugin.ts",
+        "./src/plugins/gsearch-google-plugin.ts",
+        "./src/website.ts"
+      ],
+      "./src/plugins/gsearch-github-gist-plugin.ts": [
+        "./src/website.ts"
       ],
       "./src/plugins/gsearch-google-plugin.ts": [
         "./src/website.ts"
@@ -1603,6 +1622,7 @@
       "./node_modules/colors/index.d.ts",
       "./node_modules/form-data/index.d.ts",
       "./src/index.ts",
+      "./src/plugins/gsearch-github-gist-plugin.ts",
       "./src/plugins/gsearch-google-plugin.ts",
       "./src/website.ts",
       "../../../../../usr/lib/node_modules/typescript/lib/lib.dom.d.ts",

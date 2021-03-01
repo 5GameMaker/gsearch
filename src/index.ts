@@ -2,8 +2,13 @@ import 'colors';
 import { WebSite } from './website';
 
 import './plugins/gsearch-google-plugin';
+import './plugins/gsearch-github-gist-plugin';
 
 export * from './website';
+
+import { emitKeypressEvents } from 'readline';
+emitKeypressEvents(process.stdin);
+process.stdin.setRawMode(true);
 
 async function main(args : string[]) {
     if (!process.stdout.isTTY) {
@@ -22,4 +27,4 @@ async function main(args : string[]) {
 
     await site.finalize();
 }
-if (require.main == module) main(process.argv.slice(2));
+if (require.main == module && !(require as any).parent) main(process.argv.slice(2));
