@@ -11,8 +11,7 @@ function prompt() {
 }
 class GoogleWebSiteDialog {
     check(site) {
-        return !!site.hostname.match(/^(www\.)?google\.com$/)
-            && !!site.pathname.match(/^\/search\??/);
+        return site.toString().match(/https?:\/\/google\.((com)|(ru))\/search/gum) != null;
     }
     async prompt(site) {
         const results = site.dom?.window.document.querySelectorAll('body > div#main > div > div.ZINbbc.xpd.O9g5cc.uUPGi');

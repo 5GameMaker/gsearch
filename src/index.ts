@@ -17,7 +17,7 @@ async function main(args : string[]) {
     }
     
     if (args.length === 0) {
-        console.log(`Usage: gsearch ${"<request>".yellow}`);
+        console.log(`Usage: gsearch ${"<query>".yellow}`);
         return;
     }
 

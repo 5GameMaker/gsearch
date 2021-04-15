@@ -24,7 +24,7 @@ async function main(args) {
         return;
     }
     if (args.length === 0) {
-        console.log(`Usage: gsearch ${"<request>".yellow}`);
+        console.log(`Usage: gsearch ${"<query>".yellow}`);
         return;
     }
     const request = `https://google.com/search?q=${encodeURIComponent(args[0])}`;

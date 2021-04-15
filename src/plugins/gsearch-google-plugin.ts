@@ -10,8 +10,7 @@ function prompt() : Promise<string> {
 
 export class GoogleWebSiteDialog implements WebSiteDialog {
     check(site: URL): boolean {
-        return !!site.hostname.match(/^(www\.)?google\.com$/)
-            && !!site.pathname.match(/^\/search\??/)
+        return site.toString().match(/https?:\/\/google\.((com)|(ru))\/search/gum) != null;
     }
 
     async prompt(site: WebSite): Promise<void> {

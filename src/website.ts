@@ -32,6 +32,6 @@ export class WebSite {
 }
 
 export interface WebSiteDialog {
-    check(site: URL) : boolean;
+    check(site : URL) : boolean;
     prompt(site : WebSite) : Promise<void>;
 }
